@@ -1,0 +1,14 @@
+*.dat
+poi/*.*
+region/*.*
+playerdata/*.*
+stats/*.*
+DIM1/*.*
+DIM-1/*.*
+entities/*.*
+level.dat
+level.dat_old
+data/chunks.dat
+data/fabricRegistry.dat.1
+data/raids.dat
+data/*.dat
