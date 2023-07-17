@@ -38,6 +38,7 @@ execute if score @s buy_trigger matches 213 if score $state mem matches 0 run fu
 execute if score @s buy_trigger matches 214 if score $state mem matches 0 run function item:shop/buy/214_particle
 execute if score @s buy_trigger matches 215 if score $state mem matches 0 run function item:shop/buy/215_particle
 # 骰子房
+execute if score @s buy_trigger matches 998 if score $state mem matches 0 run function item:shop/buy/998_big_dice
 execute if score @s buy_trigger matches 999 if score $state mem matches 0 run function item:shop/buy/999_dice
 # 彩蛋
 execute if score @s buy_trigger matches 114514 if score $state mem matches 0 run function item:shop/buy/easter_egg
