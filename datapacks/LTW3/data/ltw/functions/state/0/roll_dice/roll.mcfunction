@@ -1,8 +1,6 @@
 
 # 丢骰子
-scoreboard players set $random_min mem 1
-scoreboard players set $random_max mem 20
-function lib:random
+execute store result score $random mem run random 1..20
 
 # 20 / 5% 大成功：获得 1 金块
 execute if score $random mem matches 20 run function ltw:state/0/roll_dice/super_win
