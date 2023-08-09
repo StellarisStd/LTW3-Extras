@@ -8,5 +8,6 @@ function mini:main/game_init
 function ltw:state/4/state_enter
 say 已开始单个测试游戏！
 schedule function test:countdown/quick 20t
+
 #debug
 tellraw @a[team=debugging] {"text":"[DEBUG] test/mini/zom called.","color": "green"}
