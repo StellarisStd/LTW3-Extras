@@ -2,6 +2,7 @@
 # @input score $random_min mem 最小值
 # @input score $random_max mem 最大值
 # @output score $random 结果
+# todo: 1.20.2+ random
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["random"],Duration:1}
 execute store result score $random mem run data get entity @e[tag=random,limit=1] UUID[0]
