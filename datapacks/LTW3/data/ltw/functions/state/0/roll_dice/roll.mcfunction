@@ -1,6 +1,6 @@
 
 # 丢骰子
-execute store result score $random mem run random 1..20
+execute store result score $random mem run random value 1..20
 
 # 20 / 5% 大成功：获得 1 金块
 execute if score $random mem matches 20 run function ltw:state/0/roll_dice/super_win
