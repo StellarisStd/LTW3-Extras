@@ -31,5 +31,7 @@ gamerule drowningDamage false
 ## 自然生命恢复是否启用
 gamerule naturalRegeneration true
 schedule function mini:koth/game_init2 15t replace
+# 关闭玩家攻击伤害
+execute as @a[team=playing] run attribute @s generic.attack_damage base set 0
 #debug info
 tellraw @a[team=debugging] {"text":"[DEBUG] mini/zom/game_init called.","color": "green"}
