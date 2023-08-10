@@ -29,3 +29,6 @@ gamemode adventure @s[team=playing,tag=!rejoining]
 
 # 重新加入处理
 execute if entity @s[tag=rejoining] run gamemode spectator
+
+#tag-zom
+tag @a[team=playing] add isOnZombie

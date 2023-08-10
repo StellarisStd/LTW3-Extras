@@ -1,7 +1,11 @@
 # 初始化地图
 forceload add 1101 1201 1127 1227
-setblock 1100 30 1202 structure_block[mode=load]{metadata: "", mirror: "NONE",ignoreEntities: 1b, powered: 0b, seed: 0L, rotation: "NONE", posX: 0, posY: 1,posZ: 0, sizeX: 26, sizeY: 26, sizeZ: 26, mode: "LOAD", integrity: 1.0f, showair:0b, name: "mini:zombie"}
+setblock 1100 30 1202 structure_block[mode=load]{metadata: "", mirror: "NONE",ignoreEntities: 1b, powered: 0b, seed: 0L, rotation: "NONE", posX: 0, posY: 1,posZ: 0, sizeX: 26, sizeY: 26, sizeZ: 26, mode: "LOAD", integrity: 1.0f, showair:0b, name: "areocraft:zom02"}
 setblock 1100 31 1202 redstone_block
+# 启用计时计分板
+scoreboard objectives add zom_score dummy "计时分数(僵尸)"
+scoreboard objectives add zom_health health "生命值(僵尸)"
+tag @a[team=playing] add isOnZombie
 
 scoreboard players set $show_score mem 0
 scoreboard players set $new_item_cd mem 0

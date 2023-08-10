@@ -32,3 +32,6 @@ team modify playing color green
 scoreboard players set #start_countdown mem 9999999
 
 schedule function ltw:state/0/state_enter_2 10t replace
+
+# broadcast
+tellraw @a {"text": "[提示]你正在游玩 游艺街-AreoCraft群组重制版！该版本处于早期开发阶段，发现bugs请到Github仓库汇报！","color":"orange"}

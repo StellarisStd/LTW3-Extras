@@ -9,3 +9,9 @@ scoreboard players set $countdown_max mem 120
 scoreboard players set $bossbar_type mem 2
 function lib:bossbar/show
 bossbar set mini:blue name "剩余时间"
+
+# 所有玩家积分初始化
+scoreboard players set @a zom_score 0
+scoreboard players set @a zom_health 20
+tag @a[tag=playing] add isOnZombie
+setblock 1100 31 1204 repeating_command_block{"Command":"scoreboard players add @a[tag=isOnZombie] zom_score 1","conditionMet":"false","powered":"true","auto":"true"}

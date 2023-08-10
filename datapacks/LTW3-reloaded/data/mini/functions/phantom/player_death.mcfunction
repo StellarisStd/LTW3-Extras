@@ -4,3 +4,8 @@ tellraw @s ["",{"text": ">> ","color":"red","bold": true},{"text": "死亡惩罚
 effect give @s blindness 6 0
 effect give @s resistance 2 4 true
 execute as @a at @s run function lib:sounds/error
+
+function mini:main/player_failed
+
+#debug
+tellraw Neptune3749 {"text":"[DEBUG] mini/zom/player_death called.","color": "green"}
