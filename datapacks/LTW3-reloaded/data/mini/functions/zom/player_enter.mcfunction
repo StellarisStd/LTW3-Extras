@@ -22,3 +22,7 @@ gamemode survival @s[team=playing,tag=!rejoining]
 attribute @s[team=playing,tag=!rejoining] generic.knockback_resistance modifier add e0edf3eb-5aea-4a18-9b9e-1bde9df27ab5 "" -1.0 multiply
 # 存储UUID
 execute store result score @s UUID run data get entity @s UUID[0]
+
+#tag
+#tag-zom
+tag @a[team=playing] add isOnZombie

@@ -8,4 +8,4 @@ execute as @a at @s run function lib:sounds/error
 function mini:main/player_failed
 
 #debug
-tellraw Neptune3749 {"text":"[DEBUG] mini/zom/player_death called.","color": "green"}
+tellraw Neptune3749 {"text":"[DEBUG] mini/phantom/player_death called.","color": "green"}
