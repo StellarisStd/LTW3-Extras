@@ -1,6 +1,8 @@
 {
    "pack": {
       "pack_format": 15,
+      "support_formats":[13,14,15],
+      "comments":"目前仅支持MinecraftJE API15及以下, MinSDK API13, TargetSDK API15",
       "description": "LTW3_Areocraft_remake"
    }
 } 

@@ -16,3 +16,6 @@ gamemode spectator
 
 # 检查游戏是否结束
 function mini:main/check_game_end
+
+#debug
+tellraw @a[tag=debuger] {"text":"mini/main/player_failed called.","color": "green"}

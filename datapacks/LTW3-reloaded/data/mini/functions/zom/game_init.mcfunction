@@ -4,7 +4,6 @@ setblock 1100 30 1202 structure_block[mode=load]{metadata: "", mirror: "NONE",ig
 setblock 1100 31 1202 redstone_block
 # 启用计时计分板
 scoreboard objectives add zom_score dummy "计时分数(僵尸)"
-scoreboard objectives add zom_health health "生命值(僵尸)"
 tag @a[team=playing] add isOnZombie
 
 scoreboard players set $show_score mem 0
@@ -34,4 +33,4 @@ schedule function mini:koth/game_init2 15t replace
 # 关闭玩家攻击伤害
 execute as @a[team=playing] run attribute @s generic.attack_damage base set 0
 #debug info
-tellraw @a[team=debugging] {"text":"[DEBUG] mini/zom/game_init called.","color": "green"}
+tellraw @a[tag=debuger] {"text":"[DEBUG] mini/zom/game_init called.","color": "green"}

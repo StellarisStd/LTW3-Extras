@@ -12,3 +12,5 @@ tag @a[team=playing] remove isOnZombie
 # 计算积分
 execute as @a[team=playing] run scoreboard players operation @s mini_score = @s zom_score
 scoreboard objectives remove zom_score
+#debug
+tellraw @a[tag=debuger] {"text":"mini/zom/game_end called.","color": "green"}

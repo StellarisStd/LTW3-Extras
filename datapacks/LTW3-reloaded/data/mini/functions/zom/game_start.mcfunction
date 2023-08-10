@@ -14,4 +14,3 @@ bossbar set mini:blue name "剩余时间"
 scoreboard players set @a zom_score 0
 scoreboard players set @a zom_health 20
 tag @a[tag=playing] add isOnZombie
-setblock 1100 31 1204 repeating_command_block{"Command":"scoreboard players add @a[tag=isOnZombie] zom_score 1","conditionMet":"false","powered":"true","auto":"true"}

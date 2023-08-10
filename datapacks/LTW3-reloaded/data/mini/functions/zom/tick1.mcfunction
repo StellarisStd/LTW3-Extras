@@ -5,5 +5,3 @@ execute as @e[tag=bonus_item] unless entity @s[x=1100,y=36,z=1201,dx=26,dy=26,dz
 
 # 死亡判定?
 execute as @a[gamemode=spectator,team=playing] run function mini:main/player_death
-
-scoreboard players add @a[tag=isOnZombie] zom_score 1
